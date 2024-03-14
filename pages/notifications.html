@@ -41,7 +41,7 @@
 
 <body class="g-sidenav-show  bg-gray-200">
   
-         
+    
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
         <div class="sidenav-header">
           <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -148,11 +148,8 @@
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
           <div class="container-fluid py-1 px-3">
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-                <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
-              </ol>
-              <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+              
+              <h6 class="font-weight-bolder mb-0">Insert Data</h6>
             </nav>
             <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
               <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -178,117 +175,176 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">Tsh.</i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Total Sales</p>
-                <h4 class="mb-0">000.00</h4>
-              </div>
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="card mt-4">
+            <div class="card-header p-3">
+              <h5 class="mb-0">Insert Data</h5>
             </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-success text-sm font-weight-bolder">Sales</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">No.</i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">No. Customers</p>
-                <h4 class="mb-0"> 00</h4>
-              </div>
-            </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-success text-sm font-weight-bolder">Customers</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">Tsh. </i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Purchases</p>
-                <h4 class="mb-0">000.00</h4>
-              </div>
-            </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">Payments</p>
-            </div>
-          </div>
-        </div>
-        
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-lg-4 col-md-6 mt-4 mb-4">
-          <div class="card z-index-2 ">
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-              <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                <div class="chart">
-                  <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h6 class="mb-0 ">Payments</h6>
-              <p class="text-sm ">Overall Payments Made</p>
-              <hr class="dark horizontal">
+            <div class="card-body p-3 pb-0">
               
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-4 mb-4">
-          <div class="card z-index-2  ">
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-              <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                <div class="chart">
-                  <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h6 class="mb-0 "> Total Sales </h6>
-              <p class="text-sm "> <span class="font-weight-bolder">Overall Sales</p>
-              <hr class="dark horizontal">
               
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-4 mb-3">
-          <div class="card z-index-2 ">
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-              <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                <div class="chart">
-                  <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h6 class="mb-0 ">No. of Customers</h6>
-              <p class="text-sm ">Overall Number of Customers</p>
-              <hr class="dark horizontal">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      
+              <div class="alert  alert-dismissible text-black" role="alert">
+                <span class="text-sm">
+                  <div align="center">
+                    <form id="formAuthentication" class="mb-3">
+                      <div class="mt-2 mb-3">
+                        
+                        <select id="largeSelect" class="form-select form-select-lg" required>
+                          <option>Gas Type</option>
+                  <option value="manjis">Manjis Gas</option>
+                  <option value="oryx">Oryx Gas</option>
+                  <option value="mihan">Mihan Gas</option>
+                  <option value="taifa">Taifa Gas</option>
+                  <option value="orange">Orange Gas</option>
+                  <option value="lake">Lake Gas</option>
+                  <option value="meru">Meru Gas</option>
                   
+                        </select>
+                      </div>
+                      <div class="mt-2 mb-3">
+                        
+                        <select id="largeSelect" class="form-select form-select-lg" required>
+                          <option>Weight</option>
+                  <option value="manjis">6 Kilograms</option>
+                  <option value="oryx">15 Kilograms</option>
+                  
+                        </select>
+                      </div>
+
+                      <div class="mb-3">
                        
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="prno"
+                          name="prno"
+                          placeholder="Input Units..."
+                          autofocus
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                       
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="prno"
+                          name="prno"
+                          placeholder="Input Amount..."
+                          autofocus
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="prno"
+                          name="prno"
+                          placeholder="Input Customer Name..."
+                          autofocus
+                          required
+                        />
+                      </div>
+                      
+                      <div class="mb-3">
+                       
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="purpose"
+                          name="purpose"
+                          placeholder="Input Customer Phone..."
+                          autofocus
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="prno"
+                          name="prno"
+                          placeholder="Input Customer Location..."
+                          autofocus
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="purpose"
+                          name="purpose"
+                          placeholder="Input House Number / Owner..."
+                          autofocus
+                          required
+                        />
+                      </div>
+                      
+                       
+                        
+                        
+                       <div class="mt-2 mb-3">
+                          
+                          <select id="largeSelect" class="form-select form-select-lg" required>
+                            <option>Payment Mode</option>
+                            <option value="minimum">Mobile</option>
+                            <option value="moderate">Bank</option>
+                            
+                            
+                          </select>
+                        </div>
+                     
+                         
+                        <div class="mb-3 row">
+                          <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Date</label>
+                          <div class="col-md-10">
+                            <input
+                              class="form-control"
+                              type="datetime-local"
+                              
+                              id="html5-datetime-local-input"
+                              required
+                            />
+                          </div>
+                        </div>
+                       
+                        
+                       
+                       
+                        <div class="mb-3">
+                          <label for="formFileMultiple" class="form-label">Receipt ( Pdf Format)</label>
+                          <input class="form-control" type="file" required id="formFileMultiple" multiple />
+                        </div>
+                      <button class="btn btn-primary d-grid w-100">Submit</button>
+                    </form>
+                  </div>
+                  
+                <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              
+              
+              
+              
+            </div>
+          </div>
+         
+           
+               
+               
+            </div>
+          </div>
+        </div>
+      </div>
+       
          
       <footer class="footer py-4  ">
         <div class="container-fluid">
@@ -357,10 +413,11 @@
                 
               </a>
             </li>
-          
+           
             <li>
               <a class="btn btn-dark btn-buy-now" href="../pages/notifications.html">
                 <font color="white" size=2><b>Insert Data</b></font>
+                
               </a>
             </li>
             

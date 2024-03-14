@@ -637,6 +637,7 @@
           </div>
         </div>
       </div>
+          
       <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
@@ -645,8 +646,7 @@
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>, Mwenetu SHOP All rights Reserved.
-                Developed by <i class="fa fa-heart"></i> 
-                <a href="https://fmpiza.github.io/webfridolin" class="font-weight-bold" target="_blank">Fridolin</a>
+                Developed by <a href="https://fmpiza.github.io/webfridolin" class="font-weight-bold" target="_blank">Fridolin</a>
                 
               </div>
             </div>
@@ -662,38 +662,115 @@
     </a>
     <div class="card shadow-lg">
       <div class="card-header pb-0 pt-3">
-        <div class="float-start">
-          <h5 class="mt-3 mb-0">SHOP Management System</h5>
-          
-        </div>
-        <div class="float-end mt-4">
+        
+      
           <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
             <i class="material-icons">clear</i>
           </button>
-        </div>
+       
         <!-- End Toggle Button -->
       </div>
       <hr class="horizontal dark my-1">
       
         <!-- Sidenav Type -->
-        <div class="mt-3">
-          <h6 class="mb-0">Navigation</h6>
-          
-        </div>
-        <div class="d-flex">
-          <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
-          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
-          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-        </div>
         
+         
         <hr class="horizontal dark my-3">
         <div class="mt-2 d-flex">
           <h6 class="mb-0">Light / Dark</h6>
           <div class="form-check form-switch ps-0 ms-auto my-auto">
             <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+            
           </div>
+          <p>
+            
+                
+          </p>
         </div>
         
+        <hr class="horizontal dark my-3">
+        <div class="mt-2 d-flex">
+          
+          <ul class="navbar-nav">
+            <li>
+              <a class="btn btn-dark btn-buy-now"
+               href="../pages/tables.html">
+                <font color="white" size=2><b>Product Price</b></font>
+               
+              </a>
+            </li>
+              <li>
+                <a class="btn btn-dark btn-buy-now" href="../pages/icons.html">
+               <font color="white" size=2><b>New Stock</b></font>
+                
+              </a>
+            </li>
+           
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/notification.html">
+                <font color="white" size=2><b>Insert Data</b></font>
+                
+              </a>
+            </li>
+            
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/salescalculation.html">
+                <font color="white" size=2><b>Sales Calculation</b></font>
+                
+              </a>
+            </li>
+             
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/salesreport.html">
+               <font color="white" size=2><b>Sales Report</b></font>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/debtors.html">
+                <font color="white" size=2><b>Debtors</b></font>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/customerdb.html">
+                <font color="white" size=2><b>Customer Database</b></font>
+              </a>
+            </li>
+         
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/billing.html">
+                <font color="white" size=2><b>Mobile Transactions</b></font>
+              
+              </a>
+            </li>
+          
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/billing.html">
+               
+                  <font color="white" size=2><b>Bank Transactions</b></font>
+            
+               
+              </a>
+            </li>
+          
+            <li>
+              <a class="btn btn-dark btn-buy-now" href="../pages/billing.html">
+                <font color="white" size=2><b>Profit</b></font>
+                
+              </a>
+            </li>
+          </ul>
+        
+          </div>
+          <p>
+            
+                
+          </p>
+        </div>
+     
         </div>
       </div>
     </div>
@@ -705,6 +782,7 @@
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <script>
+    
     var ctx = document.getElementById("chart-bars").getContext("2d");
 
     new Chart(ctx, {

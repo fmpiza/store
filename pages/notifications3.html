@@ -205,12 +205,26 @@
                   <option value="burner">Burner</option>
                   <option value="regulator">Regulator</option>
                   <option value="pipe">Pipe</option>
-                  <option value="pipe">Trivet</option>
-                  <option value="pipe">Clamp</option>   
+                  <option value="trivet">Trivet</option>
+                  <option value="clamp">Clamp</option>   
                   <option value="completegas">Complete Gas</option>
                   
                           </select>
                         </div>
+                        <div class="mt-2 mb-3">
+                        
+                <select id="largeSelect" class="form-select form-select-lg" required>
+                  <option>Equipment Sub-Type</option>
+                          <option value="notapplicable">Not Applicable</option>
+                  <option value="burner">Manjis Burner</option>
+                  <option value="regulator">Alminium Burner</option>
+                  <option value="pipe">Orgaz Burner</option>
+                  <option value="pipe">Small Regulator</option>
+                  <option value="pipe">Large Regulator</option>   
+                  <option value="completegas">Manjis Regulator</option>
+                  
+                </select>
+              </div>
                         <div class="mb-3">
                          
                           <input
@@ -500,7 +514,7 @@
         data: {
           labels: ["M", "T", "W", "T", "F", "S", "S"],
           datasets: [{
-            label: "Sales",
+            label: "Sales", 
             tension: 0.4,
             borderWidth: 0,
             borderRadius: 4,
